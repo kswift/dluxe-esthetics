@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | DLo Esthetics</title>
+  <meta name="description" content="Contact DLo Esthetics to book an appointment or ask a question. Boutique skincare studio in Oahu, Hawaii." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-bar">
+      <a href="index.html" class="brand">
+        <span class="brand-name">DLo Esthetics</span>
+        <span class="brand-tagline">Oahu, Hawaii</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-tabs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="location.html">Location &amp; Parking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom: 32px;">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>Questions about a service, or ready to book? Reach out below and we'll get back to you shortly.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="contact-layout">
+
+          <div>
+            <div class="contact-card">
+              <h3>📞 Phone</h3>
+              <p><a href="tel:+18085551234">(808) 555-1234</a></p>
+            </div>
+            <div class="contact-card">
+              <h3>✉️ Email</h3>
+              <p><a href="mailto:hello@dloesthetics.com">hello@dloesthetics.com</a></p>
+            </div>
+            <div class="contact-card">
+              <h3>📍 Studio Address</h3>
+              <p>123 Kalākaua Ave, Suite 200<br />Honolulu, HI 96815</p>
+              <p><a href="location.html">View location &amp; parking instructions →</a></p>
+            </div>
+            <div class="contact-card">
+              <h3>Follow Along</h3>
+              <div class="social-row">
+                <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+                <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="service">Service of Interest</label>
+              <select id="service" name="service">
+                <option value="">Select a service (optional)</option>
+                <option>Signature Facial</option>
+                <option>Chemical Peel</option>
+                <option>Microdermabrasion</option>
+                <option>Lash Lift &amp; Tint</option>
+                <option>Brow Shaping &amp; Tint</option>
+                <option>Body Waxing</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-status" role="status"></p>
+            <p class="form-note">This form is a front-end demo only — see README.md for how to connect it to a real email service (e.g. Formspree) since GitHub Pages can't run server-side code.</p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">DLo Esthetics</div>
+          <p>Boutique skincare studio in Oahu, Hawaii.</p>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="location.html">Location &amp; Parking</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 DLo Esthetics. All rights reserved.</span>
+        <span>Placeholder content &mdash; edit before launch.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
