@@ -622,16 +622,6 @@ form.contact-form {
   gap: 8px;
 }
 
-/* ---------- Placeholder banner ---------- */
-
-.placeholder-banner {
-  background: #fff4e0;
-  color: #7a5b18;
-  font-size: 0.85rem;
-  text-align: center;
-  padding: 8px 16px;
-}
-
 /* ---------- Responsive nav ---------- */
 
 @media (max-width: 760px) {

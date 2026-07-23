@@ -3,26 +3,6 @@
 Static storefront site for DLo Esthetics, a boutique esthetician studio in
 Oahu, Hawaii. Plain HTML/CSS/JS, deployed via GitHub Pages.
 
-## ⚠️ Placeholder content
-
-Everything specific to the business — address, phone, email, prices, hours,
-social links, and blog posts — is placeholder text so the site could be
-scaffolded before real business details were available. Search for these
-before launch:
-
-- `123 Kalākaua Ave, Suite 200, Honolulu, HI 96815` — sample address, used in
-  [contact.html](contact.html) and [location.html](location.html) (including
-  the embedded Google Map query string).
-- `(808) 555-1234` / `hello@dloesthetics.com` — sample phone/email in
-  [contact.html](contact.html).
-- Studio hours in the table in [location.html](location.html).
-- Service names/prices in [index.html](index.html).
-- Blog posts in [blog.html](blog.html).
-- Instagram/Facebook links in [contact.html](contact.html).
-
-The yellow banner at the top of each page is a reminder of this — delete
-those `<div class="placeholder-banner">` blocks once real content is in.
-
 ## Project structure
 
 ```
