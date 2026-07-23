@@ -1,4 +1,4 @@
-// DLo Esthetics — shared site behavior
+// D'Luxe Esthetics — shared site behavior
 
 document.addEventListener("DOMContentLoaded", function () {
   var toggle = document.querySelector(".nav-toggle");

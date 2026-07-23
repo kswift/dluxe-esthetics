@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DLo Esthetics — global styles
+   D'Luxe Esthetics — global styles
    ========================================================================== */
 
 :root {
@@ -173,11 +173,23 @@ p {
   font-size: 1.05rem;
 }
 
+.hero-booking-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 8px;
+  padding: 28px 40px;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(58, 53, 50, 0.06);
+}
+
 .hero .hero-note {
   font-size: 0.85rem;
   color: var(--color-sage-dark);
-  margin-top: 16px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 /* ---------- Buttons ---------- */
@@ -236,6 +248,20 @@ section {
 
 .section-heading p {
   color: var(--color-charcoal-soft);
+}
+
+.services-card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(58, 53, 50, 0.06);
+  padding: 48px 40px;
+}
+
+@media (max-width: 640px) {
+  .services-card {
+    padding: 36px 20px;
+  }
 }
 
 /* ---------- Services menu (Home page teaser) ---------- */

@@ -1,6 +1,6 @@
-# DLo Esthetics — Website
+# D'Luxe Esthetics — Website
 
-Static storefront site for DLo Esthetics, a boutique esthetician studio in
+Static storefront site for D'Luxe Esthetics, a boutique esthetician studio in
 Oahu, Hawaii. Plain HTML/CSS/JS, deployed via GitHub Pages.
 
 ## Project structure
