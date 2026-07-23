@@ -6,7 +6,8 @@ Oahu, Hawaii. Plain HTML/CSS/JS, deployed via GitHub Pages.
 ## Project structure
 
 ```
-index.html      Home — services overview (6 services)
+index.html      Home — intro + services teaser linking to services.html
+services.html   Full services menu (6 services)
 blog.html       Blog — informational posts
 contact.html    Contact info + contact form
 location.html   Address, embedded map, parking instructions, hours

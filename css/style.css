@@ -152,9 +152,13 @@ p {
 /* ---------- Hero ---------- */
 
 .hero {
-  padding: 72px 0 56px;
+  padding: 72px 0 24px;
   text-align: center;
   background: linear-gradient(180deg, var(--color-blush-light) 0%, var(--color-cream) 100%);
+}
+
+.hero + section {
+  padding-top: 16px;
 }
 
 .hero h1 {
@@ -169,9 +173,11 @@ p {
   font-size: 1.05rem;
 }
 
-.hero-note {
+.hero .hero-note {
   font-size: 0.85rem;
   color: var(--color-sage-dark);
+  margin-top: 16px;
+  margin-bottom: 0;
 }
 
 /* ---------- Buttons ---------- */
@@ -230,6 +236,47 @@ section {
 
 .section-heading p {
   color: var(--color-charcoal-soft);
+}
+
+/* ---------- Services menu (Home page teaser) ---------- */
+
+.services-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px 48px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .services-menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px dashed rgba(58, 53, 50, 0.15);
+}
+
+.menu-item-name {
+  font-weight: 500;
+}
+
+.menu-item-price {
+  color: var(--color-gold);
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.services-teaser-cta {
+  text-align: center;
+  margin-top: 32px;
 }
 
 /* ---------- Services grid ---------- */
