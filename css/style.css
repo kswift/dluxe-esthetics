@@ -5,8 +5,6 @@
 :root {
   --color-blush: #f3d9d0;
   --color-blush-light: #faf1ee;
-  --color-sage: #a9b8a3;
-  --color-sage-dark: #7c8c76;
   --color-cream: #fdfaf6;
   --color-charcoal: #3a3532;
   --color-charcoal-soft: #6b6360;
@@ -97,7 +95,7 @@ p {
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-sage-dark);
+  color: var(--color-gold);
 }
 
 .nav-toggle {
@@ -140,12 +138,12 @@ p {
 }
 
 .nav-tabs a:hover {
-  background: var(--color-blush-light);
+  background: rgba(201, 162, 109, 0.15);
   color: var(--color-charcoal);
 }
 
 .nav-tabs a.active {
-  background: var(--color-blush);
+  background: rgba(201, 162, 109, 0.25);
   color: var(--color-charcoal);
 }
 
@@ -155,6 +153,30 @@ p {
   padding: 72px 0 24px;
   text-align: center;
   background: linear-gradient(180deg, var(--color-blush-light) 0%, var(--color-cream) 100%);
+}
+
+.hero-home {
+  padding: 64px 0;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  background-color: #0a0806;
+  background-image: linear-gradient(180deg, rgba(10, 8, 6, 0.4) 0%, rgba(10, 8, 6, 0.6) 100%), url("../assets/dluxe-hero.jpg");
+  background-size: cover, contain;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.hero-home .container {
+  width: 100%;
+}
+
+.hero-home h1 {
+  color: #fff;
+}
+
+.hero-home p {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .hero + section {
@@ -173,23 +195,10 @@ p {
   font-size: 1.05rem;
 }
 
-.hero-booking-card {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-  margin-top: 8px;
-  padding: 28px 40px;
-  background: #fff;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(58, 53, 50, 0.06);
-}
-
-.hero .hero-note {
+.hero-note {
   font-size: 0.85rem;
-  color: var(--color-sage-dark);
-  margin: 0;
+  color: var(--color-gold);
+  margin: 16px 0 0;
 }
 
 /* ---------- Buttons ---------- */
@@ -241,7 +250,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.75rem;
-  color: var(--color-sage-dark);
+  color: var(--color-gold);
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -305,6 +314,13 @@ section {
   margin-top: 32px;
 }
 
+.services-cta-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 /* ---------- Services grid ---------- */
 
 .services-grid {
@@ -353,17 +369,20 @@ section {
 /* ---------- Why / info band ---------- */
 
 .info-band {
-  background: var(--color-sage);
-  color: #fff;
+  background: var(--color-gold);
+  color: var(--color-charcoal);
 }
 
-.info-band .section-heading p,
+.info-band .section-heading p {
+  color: var(--color-charcoal-soft);
+}
+
 .info-band .section-heading .eyebrow {
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--color-charcoal);
 }
 
 .info-band h2 {
-  color: #fff;
+  color: var(--color-charcoal);
 }
 
 .info-grid {
@@ -374,12 +393,12 @@ section {
 }
 
 .info-grid h4 {
-  color: #fff;
+  color: var(--color-charcoal);
   margin-bottom: 6px;
 }
 
 .info-grid p {
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--color-charcoal-soft);
   font-size: 0.9rem;
 }
 
@@ -419,7 +438,7 @@ section {
 
 .blog-card-thumb {
   height: 150px;
-  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-sage) 100%);
+  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-gold) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -437,7 +456,7 @@ section {
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-sage-dark);
+  color: var(--color-gold);
   font-weight: 600;
   margin-bottom: 10px;
 }
