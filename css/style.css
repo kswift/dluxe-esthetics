@@ -17,7 +17,6 @@
   --color-charcoal-soft: #6b6360;
   --color-gold: #c9a26d;
   --color-gold-light: #e8cb91;
-  --color-taupe: #7e725c;
   --shadow-soft: 0 8px 24px rgba(58, 53, 50, 0.08);
   --radius: 14px;
   --max-width: 1120px;
@@ -75,7 +74,7 @@ p {
   z-index: 100;
   background: rgba(253, 250, 246, 0.92);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(126, 114, 92, 0.2);
+  border-bottom: 1px solid rgba(201, 162, 109, 0.2);
 }
 
 .nav-bar {
@@ -173,7 +172,7 @@ p {
 .hero {
   padding: 72px 0 24px;
   text-align: center;
-  background: linear-gradient(180deg, rgb(211, 181, 127) 0%, rgb(166, 135, 89) 50%, rgb(232, 203, 145) 100%);
+  background: linear-gradient(180deg, rgb(211, 181, 127) 0%, rgb(232, 203, 145) 100%);
 }
 
 .hero-home {
@@ -359,7 +358,7 @@ section {
   align-items: center;
   gap: 16px;
   padding: 16px 0;
-  border-bottom: 1px dashed rgba(126, 114, 92, 0.3);
+  border-bottom: 1px dashed rgba(201, 162, 109, 0.3);
 }
 
 .menu-item-name {
@@ -769,7 +768,7 @@ form.contact-form {
 
 .hours-table td {
   padding: 8px 0;
-  border-bottom: 1px solid rgba(126, 114, 92, 0.2);
+  border-bottom: 1px solid rgba(201, 162, 109, 0.2);
   font-size: 0.94rem;
 }
 
@@ -846,7 +845,7 @@ form.contact-form {
     background: var(--color-cream);
     padding: 12px 24px 20px;
     gap: 4px;
-    border-bottom: 1px solid rgba(126, 114, 92, 0.2);
+    border-bottom: 1px solid rgba(201, 162, 109, 0.2);
     display: none;
   }
 
