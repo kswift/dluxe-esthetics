@@ -12,8 +12,6 @@
 }
 
 :root {
-  --color-blush: #f3d9d0;
-  --color-blush-light: #faf1ee;
   --color-cream: #fdfaf6;
   --color-charcoal: #3a3532;
   --color-charcoal-soft: #6b6360;
@@ -306,6 +304,35 @@ section {
   }
 }
 
+.addons-card {
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 48px 40px;
+}
+
+.addons-card .eyebrow {
+  color: var(--color-charcoal);
+}
+
+.addons-card .section-heading p {
+  color: var(--color-charcoal-soft);
+}
+
+.addons-card .menu-item {
+  border-bottom-color: rgba(58, 53, 50, 0.18);
+}
+
+.addons-card .menu-item-price {
+  color: var(--color-charcoal);
+}
+
+@media (max-width: 640px) {
+  .addons-card {
+    padding: 36px 20px;
+  }
+}
+
 /* ---------- Services menu (Home page teaser) ---------- */
 
 .services-menu-grid {
@@ -314,6 +341,10 @@ section {
   gap: 4px 48px;
   max-width: 760px;
   margin: 0 auto;
+}
+
+.addons-card .services-menu-grid {
+  grid-template-columns: 1fr;
 }
 
 @media (max-width: 640px) {
@@ -325,7 +356,7 @@ section {
 .menu-item {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 16px;
   padding: 16px 0;
   border-bottom: 1px dashed rgba(126, 114, 92, 0.3);
@@ -335,19 +366,18 @@ section {
   font-weight: 500;
   display: inline-flex;
   align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
   gap: 8px;
 }
 
 .menu-item-icon-wrap {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  background: var(--color-blush-light);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  padding: 6px;
 }
 
 .menu-item-icon {
@@ -393,8 +423,14 @@ section {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+}
+
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .service-card {
@@ -408,14 +444,11 @@ section {
 .service-icon {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  background: var(--color-blush-light);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
   margin-bottom: 16px;
-  padding: 8px;
 }
 
 .service-icon img {
@@ -602,12 +635,18 @@ section {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: var(--color-blush-light);
+  background: rgba(201, 162, 109, 0.18);
+  color: var(--color-gold);
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 1rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.social-row a:hover {
+  background: var(--color-gold);
+  color: #fff;
 }
 
 form.contact-form {
@@ -703,7 +742,7 @@ form.contact-form {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--color-blush);
+  background: rgba(201, 162, 109, 0.18);
   display: flex;
   align-items: center;
   justify-content: center;
