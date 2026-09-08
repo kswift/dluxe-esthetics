@@ -182,8 +182,8 @@ p {
   display: flex;
   align-items: center;
   background-color: #0a0806;
-  background-image: linear-gradient(180deg, rgba(10, 8, 6, 0.4) 0%, rgba(10, 8, 6, 0.6) 100%), url("../assets/dluxe-hero.jpg");
-  background-size: cover, contain;
+  background-image: linear-gradient(180deg, rgba(10, 8, 6, 0.4) 0%, rgba(10, 8, 6, 0.6) 100%), url("../assets/dluxe-hero-2.png");
+  background-size: cover, cover;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
 }
