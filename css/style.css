@@ -12,6 +12,7 @@
 }
 
 :root {
+  color-scheme: light;
   --color-cream: #fdfaf6;
   --color-charcoal: #3a3532;
   --color-charcoal-soft: #6b6360;
