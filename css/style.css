@@ -321,6 +321,27 @@ section {
 
 .menu-item-name {
   font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-item-icon-wrap {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--color-blush-light);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 6px;
+}
+
+.menu-item-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .menu-item-price {
@@ -373,8 +394,8 @@ section {
 }
 
 .service-icon {
-  width: 46px;
-  height: 46px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: var(--color-blush-light);
   display: flex;
@@ -382,6 +403,13 @@ section {
   justify-content: center;
   font-size: 1.4rem;
   margin-bottom: 16px;
+  padding: 8px;
+}
+
+.service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .service-card h3 {
@@ -473,11 +501,10 @@ section {
 
 .blog-card-thumb {
   height: 150px;
-  background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-gold) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.2rem;
+  background-image: url("../assets/dluxe-hero.jpg");
+  background-size: cover;
+  background-position: center 55%;
+  background-repeat: no-repeat;
 }
 
 .blog-card-body {
