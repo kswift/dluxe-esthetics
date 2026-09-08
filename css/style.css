@@ -190,6 +190,14 @@ p {
   background-repeat: no-repeat, no-repeat;
 }
 
+@media (max-width: 700px) {
+  .hero-home {
+    height: auto;
+    min-height: 260px;
+    background-size: cover, contain;
+  }
+}
+
 .hero-home .container {
   width: 100%;
 }
