@@ -2,6 +2,15 @@
    D'Luxe Esthetics — global styles
    ========================================================================== */
 
+@font-face {
+  font-family: "Bw Modelica";
+  src: url("../assets/fonts/BwModelica.woff2") format("woff2"),
+       url("../assets/fonts/BwModelica.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --color-blush: #f3d9d0;
   --color-blush-light: #faf1ee;
@@ -13,7 +22,7 @@
   --radius: 14px;
   --max-width: 1120px;
   --font-heading: "Playfair Display", Georgia, serif;
-  --font-body: "Poppins", "Segoe UI", Arial, sans-serif;
+  --font-body: "Bw Modelica", "Poppins", "Segoe UI", Arial, sans-serif;
 }
 
 * {
@@ -80,9 +89,21 @@ p {
 
 .brand {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   line-height: 1.1;
   text-decoration: none;
+}
+
+.brand-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .brand-name {
