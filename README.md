@@ -8,6 +8,7 @@ Oahu, Hawaii. Plain HTML/CSS/JS, deployed via GitHub Pages.
 ```
 index.html      Home — intro + services teaser linking to services.html
 services.html   Full services menu (6 services)
+book.html       Embedded Square Appointments booking widget
 blog.html       Blog — informational posts
 contact.html    Contact info + contact form
 location.html   Address, embedded map, parking instructions, hours

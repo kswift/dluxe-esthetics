@@ -309,6 +309,20 @@ section {
   white-space: nowrap;
 }
 
+.square-booking-embed {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(58, 53, 50, 0.06);
+  overflow: visible;
+  min-height: 500px;
+}
+
+.square-booking-embed iframe {
+  height: 700px !important;
+  min-height: 700px !important;
+}
+
 .services-teaser-cta {
   text-align: center;
   margin-top: 32px;
