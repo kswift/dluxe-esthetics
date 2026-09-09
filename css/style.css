@@ -211,7 +211,7 @@ p {
 }
 
 .hero + section {
-  padding-top: 16px;
+  padding-top: 0;
 }
 
 .hero h1 {
@@ -295,7 +295,7 @@ section {
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
   border: 1px solid rgba(58, 53, 50, 0.06);
-  padding: 48px 40px;
+  padding: 28px 40px 48px;
 }
 
 @media (max-width: 640px) {
@@ -313,6 +313,10 @@ section {
 
 .addons-card .eyebrow {
   color: var(--color-charcoal);
+}
+
+.services-card .eyebrow {
+  color: var(--color-gold-light);
 }
 
 .addons-card .section-heading p {
