@@ -443,6 +443,8 @@ section {
   padding: 28px 24px;
   box-shadow: var(--shadow-soft);
   border: 1px solid rgba(58, 53, 50, 0.05);
+  display: flex;
+  flex-direction: column;
 }
 
 .service-icon {
@@ -476,6 +478,30 @@ section {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--color-gold-light);
+}
+
+.service-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px dashed rgba(58, 53, 50, 0.12);
+}
+
+.book-item-btn {
+  flex-shrink: 0;
+  padding: 8px 30px;
+  font-size: 0.85rem;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-item-btn:hover {
+  background: var(--color-gold);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 0 18px rgba(201, 162, 109, 0.6);
 }
 
 /* ---------- Why / info band ---------- */
