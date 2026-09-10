@@ -53,15 +53,15 @@ nginx -p . -s stop -c nginx.conf
 If you don't have nginx installed, any static file server works for local
 preview too, e.g. `npx serve .` or Python's `python -m http.server`.
 
-## Wiring up the contact form
+## Contact form
 
-GitHub Pages can't run server-side code, so the form in
-[contact.html](contact.html) currently just shows a confirmation message
-client-side (see [js/script.js](js/script.js)) without actually sending
-anything. To make it functional, connect it to a form backend such as
-[Formspree](https://formspree.io/) or [Netlify Forms](https://www.netlify.com/products/forms/):
-point the `<form>`'s `action` attribute at the service's endpoint and remove
-(or adjust) the `preventDefault()` call in `script.js`.
+The form in [contact.html](contact.html) submits to
+[Formspree](https://formspree.io/) (`https://formspree.io/f/mqpknbyk`) via
+`fetch` in [js/script.js](js/script.js), which shows an inline confirmation
+message instead of redirecting to Formspree's default thank-you page.
+Submissions are emailed to whatever address is set as the recipient on that
+form in the Formspree dashboard. The free Formspree plan covers 50
+submissions/month — see their pricing page if that's ever not enough.
 
 ## Adding a new blog post
 
