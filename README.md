@@ -14,8 +14,25 @@ location.html   Address, embedded map, parking instructions, hours
 css/style.css   All site styling
 js/script.js    Mobile nav toggle, active-tab highlighting, contact form
 404.html        Custom not-found page (used by GitHub Pages automatically)
+sitemap.xml     Lists all real pages for search engine crawlers
+robots.txt      Allows all crawlers, points to sitemap.xml
 nginx.conf      Local-only preview config (see below) — not used in production
 ```
+
+## SEO
+
+- Every real page has a canonical `<link>` tag plus Open Graph/Twitter
+  Card meta tags (title, description, image) for search and social sharing.
+- `index.html` includes `BeautySalon` structured data (JSON-LD) with the
+  business's name, address, phone, hours, and price range — this is what
+  can power a rich business card in Google Search results.
+- `404.html` is marked `noindex` so error pages don't get indexed.
+- To actually get indexed and show up in Google Search: set up
+  [Google Search Console](https://search.google.com/search-console) for
+  the domain, submit `sitemap.xml`, and request indexing. Also worth
+  setting up a [Google Business Profile](https://business.google.com/) —
+  that's the single biggest factor for local search visibility, more so
+  than anything on-page.
 
 ## Deploying to GitHub Pages
 
