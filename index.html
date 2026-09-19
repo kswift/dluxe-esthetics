@@ -81,8 +81,20 @@
 
   <main>
     <section class="hero hero-home">
+      <div class="hero-slider">
+        <div class="hero-slide active" data-full="assets/dluxe-hero-2.png" style="background-image: url('assets/dluxe-hero-2.png');"></div>
+        <div class="hero-slide" data-full="assets/grand-opening.png" data-no-tint="true" style="background-image: url('assets/grand-opening.png'); background-size: contain;"></div>
+      </div>
+      <button type="button" class="hero-slider-arrow hero-slider-prev" aria-label="Previous image">&#10094;</button>
+      <button type="button" class="hero-slider-arrow hero-slider-next" aria-label="Next image">&#10095;</button>
+      <div class="hero-slider-dots"></div>
       <div class="container"></div>
     </section>
+
+    <div class="lightbox" id="heroLightbox">
+      <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+      <img class="lightbox-img" src="" alt="" />
+    </div>
 
     <section id="services" style="padding-top: 40px;">
       <div class="container">

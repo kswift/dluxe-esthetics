@@ -12,6 +12,116 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Homepage hero: image slider with arrows, dots, and auto-advance
+  var heroSlides = document.querySelectorAll(".hero-slide");
+  if (heroSlides.length > 1) {
+    var heroHome = document.querySelector(".hero-home");
+    var dotsContainer = document.querySelector(".hero-slider-dots");
+    var prevBtn = document.querySelector(".hero-slider-prev");
+    var nextBtn = document.querySelector(".hero-slider-next");
+    var currentSlide = 0;
+    var dots = [];
+    var autoTimer;
+
+    heroSlides.forEach(function (slide, i) {
+      if (dotsContainer) {
+        var dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "hero-slider-dot" + (i === 0 ? " active" : "");
+        dot.setAttribute("aria-label", "Go to image " + (i + 1));
+        dot.addEventListener("click", function () {
+          goToSlide(i);
+          restartAutoTimer();
+        });
+        dotsContainer.appendChild(dot);
+        dots.push(dot);
+      }
+    });
+
+    function goToSlide(index) {
+      heroSlides[currentSlide].classList.remove("active");
+      dots[currentSlide] && dots[currentSlide].classList.remove("active");
+      currentSlide = (index + heroSlides.length) % heroSlides.length;
+      heroSlides[currentSlide].classList.add("active");
+      dots[currentSlide] && dots[currentSlide].classList.add("active");
+      if (heroHome) {
+        heroHome.classList.toggle("no-tint", heroSlides[currentSlide].getAttribute("data-no-tint") === "true");
+      }
+    }
+
+    function restartAutoTimer() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(function () {
+        goToSlide(currentSlide + 1);
+      }, 5000);
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", function () {
+        goToSlide(currentSlide - 1);
+        restartAutoTimer();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", function () {
+        goToSlide(currentSlide + 1);
+        restartAutoTimer();
+      });
+    }
+
+    restartAutoTimer();
+
+    // Click a slide to pop it out full-size in a lightbox
+    var lightbox = document.getElementById("heroLightbox");
+    var lightboxImg = lightbox ? lightbox.querySelector(".lightbox-img") : null;
+    var lightboxClose = lightbox ? lightbox.querySelector(".lightbox-close") : null;
+
+    function openLightbox(src) {
+      var fullSrc = src || heroSlides[currentSlide].getAttribute("data-full");
+      if (lightbox && lightboxImg && fullSrc) {
+        lightboxImg.src = fullSrc;
+        lightbox.classList.add("open");
+      }
+    }
+
+    function closeLightbox() {
+      if (lightbox) {
+        lightbox.classList.remove("open");
+      }
+    }
+
+    heroSlides.forEach(function (slide) {
+      slide.addEventListener("click", function () {
+        openLightbox();
+      });
+    });
+
+    if (lightboxClose) {
+      lightboxClose.addEventListener("click", closeLightbox);
+    }
+
+    if (lightbox) {
+      lightbox.addEventListener("click", function (e) {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+    }
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        closeLightbox();
+      }
+    });
+
+    // Automatically pop out the Grand Opening flyer once per browser session
+    if (!sessionStorage.getItem("seenGrandOpening")) {
+      openLightbox("assets/grand-opening.png");
+      sessionStorage.setItem("seenGrandOpening", "true");
+    }
+  }
+
   // Highlight the current page's nav link
   var currentPath = window.location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll(".nav-tabs a").forEach(function (link) {
