@@ -114,12 +114,6 @@ document.addEventListener("DOMContentLoaded", function () {
         closeLightbox();
       }
     });
-
-    // Automatically pop out the Grand Opening flyer once per browser session
-    if (!sessionStorage.getItem("seenGrandOpening")) {
-      openLightbox("assets/grand-opening.png");
-      sessionStorage.setItem("seenGrandOpening", "true");
-    }
   }
 
   // Highlight the current page's nav link

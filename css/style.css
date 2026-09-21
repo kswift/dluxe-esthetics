@@ -664,6 +664,66 @@ section {
   box-shadow: 0 0 18px rgba(201, 162, 109, 0.6);
 }
 
+/* ---------- About ---------- */
+
+.about-section {
+  padding-top: 0;
+  margin-top: -24px;
+}
+
+.about-card {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  align-items: center;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(58, 53, 50, 0.06);
+  padding: 40px;
+}
+
+.about-photo {
+  position: relative;
+}
+
+.about-photo-base {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  background: var(--color-charcoal);
+  display: block;
+}
+
+.about-body .eyebrow {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  color: var(--color-gold);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-body p {
+  color: var(--color-charcoal-soft);
+  margin-bottom: 14px;
+}
+
+@media (max-width: 800px) {
+  .about-card {
+    grid-template-columns: 1fr;
+    padding: 28px 20px;
+    gap: 24px;
+  }
+
+  .about-photo {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
 /* ---------- Why / info band ---------- */
 
 .info-band {
