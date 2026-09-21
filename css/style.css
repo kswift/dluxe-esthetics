@@ -722,6 +722,12 @@ section {
     max-width: 280px;
     margin: 0 auto;
   }
+
+  .about-body .eyebrow,
+  .about-body h2 {
+    display: block;
+    text-align: center;
+  }
 }
 
 /* ---------- Why / info band ---------- */
